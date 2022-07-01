@@ -156,8 +156,10 @@
     .main-appeal {
         margin-top: 80px;
         padding: 40px;
-        display: flex;
         flex-direction: column;
+    }
+    .main-appeal.is-active {
+        display: flex !important;
     }
     .main-appeal__logo {
         max-width: 180px;

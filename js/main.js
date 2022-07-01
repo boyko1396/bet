@@ -12,16 +12,16 @@ $(document).ready(function() {
     }
 
     $('.js-btn-slide').click(function(){
-        $('.main-appeal--main, .main-form').slideToggle(450);
+        $('.main-appeal--main, .main-form').slideToggle(450).toggleClass('is-active');
     });
 
     $('.js-btn-slide-info').click(function(e){
-        $('.main-appeal--main, .main-appeal--info').slideToggle(450);
+        $('.main-appeal--main, .main-appeal--info').slideToggle(450).toggleClass('is-active');
         e.preventDefault();
     });
 
     $('.js-btn-slide-view').click(function(e){
-        $('.main-form, .main-appeal--info').slideToggle(450);
+        $('.main-form, .main-appeal--info').slideToggle(450).toggleClass('is-active');
         e.preventDefault();
     });
 
