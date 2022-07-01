@@ -571,9 +571,6 @@ h6,
                 0 0 14px 4px rgba(255,207,0,.3);
 }
 
-.input-area {
-}
-
 .input-area__label {
     margin: 0 0 16px;
     display: flex;
@@ -583,7 +580,7 @@ h6,
 
 .input-area__title {
     font-weight: bold;
-    font-size: 20px
+    font-size: 18px;
 }
 
 .input-area__tooltip {
@@ -615,8 +612,8 @@ h6,
     margin: 4px 0 0 -90px;
     padding: 6px;
     content: attr(data-tooltip);
-    font-size: 10px;
-    line-height: 1.2;
+    font-size: 12px;
+    line-height: 1.3;
     color: var(--color-white);
     text-align: center;
     position: absolute;
@@ -704,6 +701,7 @@ h6,
     position: fixed;
     top: 0;
     left: 0;
+    pointer-events: none;
     z-index: 4;
 }
 
@@ -738,8 +736,8 @@ h6,
     vertical-align: top;
     transition: all .4s;
     transition-property: opacity;
+    pointer-events: auto;
     position: relative;
-    z-index: 3;
 }
 
 .header__logo:hover {
@@ -763,9 +761,8 @@ h6,
     height: 44px;
     display: block;
     flex: 0 0 44px;
+    pointer-events: auto;
     position: relative;
-    position: relative;
-    z-index: 3;
 }
 
 .header__telegram-link:hover {
@@ -949,7 +946,7 @@ h6,
 }
 
 .main-appeal__title {
-    margin: 0 0 4px;
+    margin: 0 0 14px;
     line-height: 1;
     text-transform: uppercase;
 }
@@ -1061,6 +1058,7 @@ h6,
 }
 
 .main-appeal__footer-description {
+    font-size: 12px;
     line-height: 1.5;
     color: rgba(255,255,255,.5);
 }
