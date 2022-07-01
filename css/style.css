@@ -934,6 +934,10 @@ h6,
     z-index: 2;
 }
 
+.main-appeal--info {
+    display: none;
+}
+
 .main-appeal.is-hide {
 }
 
@@ -998,6 +1002,10 @@ h6,
     padding: 0;
     list-style-type: none;
     font-size: 17px;
+}
+
+.main-appeal__ul--info {
+    margin-bottom: 60px;
 }
 
 .main-appeal__ul li {

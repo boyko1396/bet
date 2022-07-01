@@ -1,11 +1,6 @@
 $(document).ready(function() {
     select2Init();
 
-    // header dropdown toggle
-    $('.js-btn-slide').click(function(){
-        $('.main-appeal').addClass('is-hide');
-    });
-
     // select2 init
     function select2Init() {
         if ($('.js-select-init')[0]){
@@ -17,7 +12,17 @@ $(document).ready(function() {
     }
 
     $('.js-btn-slide').click(function(){
-        $('.main-appeal, .main-form').slideToggle(450);
+        $('.main-appeal--main, .main-form').slideToggle(450);
+    });
+
+    $('.js-btn-slide-info').click(function(e){
+        $('.main-appeal--main, .main-appeal--info').slideToggle(450);
+        e.preventDefault();
+    });
+
+    $('.js-btn-slide-view').click(function(e){
+        $('.main-form, .main-appeal--info').slideToggle(450);
+        e.preventDefault();
     });
 
     // show textarea form
