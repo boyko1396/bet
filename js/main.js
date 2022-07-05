@@ -1,3 +1,8 @@
+// preloader
+setTimeout(function () {
+    document.getElementById('preloader').remove();
+}, 1100);
+
 $(document).ready(function() {
     select2Init();
 

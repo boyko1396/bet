@@ -826,9 +826,9 @@ h6,
 
 .main__hero-bg--1 {
     background-image: url(../images/main-hero-1.png);
-    width: 688px;
-    height: 876px;
-    margin-left: -844px;
+    width: 35.833333333vw;
+    height: 45.625vw;
+    margin-left: -46vw;
     bottom: 0;
     left: 50%;
     z-index: 1;
@@ -891,14 +891,17 @@ h6,
 }
 
 .main__price {
-    background: linear-gradient(270deg,rgba(255,207,0,.32) 0%,rgba(255,207,0,0) 100%);
-    min-width: 240px;
-    padding: 18px 20px 18px 40px;
+    background: rgba(255,255,255,.12);
+    min-width: 192px;
+    margin-left: 72px;
+    padding: 15px 32px;
     display: flex;
     align-items: center;
-    position: fixed;
-    top: 144px;
-    right: 0;
+    position: absolute;
+    top: 4px;
+    left: 100%;
+    border-right: 2px solid #FFCF00;
+    border-radius: 4px;
     z-index: 2;
 }
 
@@ -906,16 +909,17 @@ h6,
     margin-right: 16px;
     font-size: 14px;
     line-height: 1.5;
-    color: var(--color-accent);
+    color: rgba(255,255,255,.5);
+    text-align: right;
     white-space: nowrap;
 }
 
 .main__price-amount {
-    min-width: 60px;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 26px;
     color: var(--color-white);
     flex-shrink: 0;
+    white-space: nowrap;
 }
 
 .main__container {
@@ -981,14 +985,20 @@ h6,
 }
 
 .main-appeal__sell-account:hover {
-    color: var(--color-white);
     text-decoration: none;
 }
 
 .main-appeal__sell-account-title {
     margin-right: 12px;
     line-height: 1;
+    color: rgba(255,255,255,.5);
     box-shadow: 0 1px 0 currentColor;
+    transition: all .4s;
+    transition-property: color;
+}
+
+.main-appeal__sell-account:hover .main-appeal__sell-account-title {
+    color: var(--color-accent);
 }
 
 .main-appeal__sell-account-icon {

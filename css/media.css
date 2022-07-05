@@ -24,11 +24,23 @@
     .main__col {
         margin-right: auto;
     }
-    .main-appeal {
-        padding-top: 220px;
-    }
     .main-form {
         margin-top: 80px;
+    }
+    .main-appeal__sell-account {
+        margin-bottom: 40px;
+    }
+    .main-appeal__sell-account:before {
+        margin-top: 20px;
+    }
+    .main-appeal__logo {
+        margin-bottom: 50px;
+    }
+    .main-appeal__payments {
+        margin-bottom: 50px;
+    }
+    .header__logo-wrap:before {
+        display: none;
     }
 }
 
@@ -40,8 +52,8 @@
         display: none;
     }
     .main__price {
-        background: linear-gradient(270deg, var(--color-accent) 0%,rgba(255,207,0,0) 100%);
         min-width: 0;
+        margin-left: -60px;
     }
     .main__col {
         width: 100%;
@@ -108,7 +120,7 @@
     }
     .main__price {
         padding: 18px 20px;
-        top: 160px;
+        top: 10px;
     }
     .main__price-amount {
         min-width: 0;
