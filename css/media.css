@@ -16,13 +16,13 @@
 @media (min-width: 1200px) {
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
     .header {
         padding: 20px 0;
         position: absolute;
     }
-    .main__col {
-        margin-right: auto;
+    .header__logo-wrap:before {
+        display: none;
     }
     .main-form {
         margin-top: 80px;
@@ -39,45 +39,55 @@
     .main-appeal__payments {
         margin-bottom: 50px;
     }
-    .header__logo-wrap:before {
-        display: none;
-    }
 }
 
 @media (max-width: 1199px) {
-}
-
-@media (max-width: 1024px) {
     .header__logo-wrap:before {
         display: none;
     }
+    .main-appeal {
+        padding-top: 120px;
+    }
     .main__price {
         min-width: 0;
-        margin-left: -60px;
+        margin: 0;
+        position: fixed;
+        top: 128px;
+        right: calc(var(--gap) * 2);
+        left: initial;
+    }
+    .main-form__title {
+        padding-left: 30px;
+    }
+    .main-form__btn-prev {
+        width: 24px;
+        height: 24px;
+        margin-top: -12px;
+        margin-right: 0;
+        margin-left: -15px;
+        right: initial;
+        left: 0;
     }
     .main__col {
         width: 100%;
         max-width: 660px;
+        margin-left: 0;
         flex-basis: 660px;
     }
+    .main-form {
+        background: none;
+        padding: 120px calc(2 * var(--gap)) 0;
+        margin: 0 calc(-2 * var(--gap)) 80px;
+    }
+    .main-form:before {
+        display: none;
+    }
     .main-form__header {
-        margin-top: 50px;
     }
     .main__hero-bg--1 {
         margin-left: 0;
         left: -20vw;
         opacity: .3;
-    }
-    .main-appeal__logo {
-        margin-right: auto;
-        margin-left: auto;
-    }
-    .main-appeal__title {
-        text-align: center;
-    }
-    .main-appeal__sell-account {
-        display: flex;
-        justify-content: center;
     }
 }
 
@@ -91,10 +101,11 @@
         --font-title-size-6: 18px;
     }
     .container {
-        padding: 0 var(--gap);
+        padding: 0 calc(1.5 * var(--gap));
     }
-    .main__container {
-        padding: 0;
+    .main-form {
+        padding: 120px calc(1.5 * var(--gap)) 0;
+        margin: 0 calc(-1.5 * var(--gap)) 80px;
     }
     .main__col {
         width: 100%;
@@ -114,34 +125,19 @@
         height: 34px;
         flex-basis: 34px;
     }
-    .main-form {
-        margin-top: 80px;
-        padding: 40px;
-    }
     .main__price {
-        background: linear-gradient(270deg, var(--color-accent) 0%,rgba(255,207,0,0) 100%);
+        background: linear-gradient(270deg, rgb(255,207,0,.18) 0%,rgba(255,207,0,0) 100%);
         margin: 0;
-        padding: 18px 20px;
+        padding: 16px 18px;
         position: fixed;
-        top: 178px;
+        top: 112px;
         right: 0;
         left: auto;
         border-radius: 0;
     }
     .main__price-amount {
         min-width: 0;
-    }
-    .main-form__btn-prev {
-        width: 24px;
-        height: 24px;
-        margin-right: 0;
-        margin-left: -15px;
-        right: initial;
-        left: 0;
-    }
-    .main-form__title {
-        max-width: 210px;
-        padding-left: 26px;
+        font-size: 22px;
     }
     .main__price-title {
         display: none;
@@ -172,8 +168,8 @@
         margin-bottom: 0;
     }
     .main-appeal {
-        margin-top: 80px;
-        padding: 40px;
+        margin-top: 100px;
+        padding: 0;
         flex-direction: column;
     }
     .main-appeal.is-active {
@@ -181,7 +177,7 @@
     }
     .main-appeal__logo {
         max-width: 180px;
-        margin-bottom: 60px;
+        margin-bottom: 40px;
     }
     .main-appeal__payments {
         margin-bottom: 40px;
@@ -192,6 +188,8 @@
     .main-appeal__footer-btn {
         width: 100%;
         margin: 0 0 20px;
+        padding-right: 5px;
+        padding-left: 5px;
     }
     .main-appeal__footer-description {
         display: none;
@@ -242,15 +240,6 @@
 }
 
 @media (max-width: 480px) {
-    .main-appeal {
-        padding: 20px 30px;
-    }
-    .main-form {
-        padding: 20px 30px;
-    }
-    .main__price {
-        top: 160px;
-    }
 }
 
 @media (max-width: 420px) {

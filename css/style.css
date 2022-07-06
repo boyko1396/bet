@@ -826,11 +826,12 @@ h6,
 
 .main__hero-bg--1 {
     background-image: url(../images/main-hero-1.png);
-    width: 35.833333333vw;
-    height: 45.625vw;
-    margin-left: -46vw;
+    background-size: auto 95%;
+    background-position: left bottom;
+    width: 100%;
+    height: 100%;
     bottom: 0;
-    left: 50%;
+    left: 0;
     z-index: 1;
 }
 
@@ -892,14 +893,15 @@ h6,
 
 .main__price {
     background: rgba(255,255,255,.12);
+    width: fit-content;
     min-width: 192px;
-    margin-left: 72px;
+    margin: -127px -53px 52px auto;
     padding: 15px 32px;
     display: flex;
     align-items: center;
-    position: absolute;
-    top: 4px;
-    left: 100%;
+    position: sticky;
+    top: 20px;
+    right: calc(var(--gap) * 2);
     border-right: 2px solid #FFCF00;
     border-radius: 4px;
     z-index: 2;
