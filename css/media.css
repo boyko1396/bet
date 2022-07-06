@@ -71,7 +71,6 @@
     .main__col {
         width: 100%;
         max-width: 660px;
-        margin-left: 0;
         flex-basis: 660px;
     }
     .main-form {
@@ -85,8 +84,6 @@
     .main-form__header {
     }
     .main__hero-bg--1 {
-        margin-left: 0;
-        left: -20vw;
         opacity: .3;
     }
 }
@@ -110,6 +107,7 @@
     .main__col {
         width: 100%;
         max-width: 100%;
+        margin-left: 0;
         flex-basis: initial;
     }
     .header__logo {
