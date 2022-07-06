@@ -119,8 +119,14 @@
         padding: 40px;
     }
     .main__price {
+        background: linear-gradient(270deg, var(--color-accent) 0%,rgba(255,207,0,0) 100%);
+        margin: 0;
         padding: 18px 20px;
-        top: 10px;
+        position: fixed;
+        top: 178px;
+        right: 0;
+        left: auto;
+        border-radius: 0;
     }
     .main__price-amount {
         min-width: 0;
@@ -241,6 +247,9 @@
     }
     .main-form {
         padding: 20px 30px;
+    }
+    .main__price {
+        top: 160px;
     }
 }
 
