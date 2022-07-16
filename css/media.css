@@ -14,9 +14,6 @@
 }
 
 @media (min-width: 1200px) {
-    body.is-block .header {
-        right: 17px;
-    }
 }
 
 @media (max-width: 1440px) {

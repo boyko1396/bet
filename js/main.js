@@ -17,9 +17,6 @@ $(document).ready(function() {
     }
 
     $('.js-btn-slide').click(function(){
-        setTimeout(function() {
-            $('body').removeClass('is-block');
-        }, 150);
         $('.main-appeal--main, .main-form').slideToggle(450).toggleClass('is-active');
     });
 

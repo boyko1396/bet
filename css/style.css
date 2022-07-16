@@ -76,6 +76,21 @@ body {
     color: var(--color-white);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #020712;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #666;
+  border-radius: 3px;
+  border: 1px solid #020712;
 }
 
 a {
